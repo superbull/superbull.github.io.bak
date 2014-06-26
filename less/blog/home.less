@@ -1,3 +1,45 @@
+/* home page */
+body.home-page {
+  background: url("/images/background.png") repeat-x scroll center top #2C4762;
+}
+
+.fullscreen_post_bg {
+  background-position: 50% 50%;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.fullscreen_post_bg:after {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.fullscreen_post_bg:before {
+  background: url("/images/vignetter.png") repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0.6;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.fullscreen_post_bg:before {
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: none;
+}
+.fullscreen_post_bg img {
+  display: none;
+}
+
+
 .home{
   color: #fff;
   margin: 0 auto;
@@ -7,15 +49,33 @@
   z-index: 5;
   margin-top: -100px;
 
-  .site-name a {
-    display: block;
-    margin: 0 auto;
-    font-size: 48px;
-    color: #fff;
-    text-decoration: none;
+  .site-name {
+    margin-bottom: 2em;
+
+    a {
+      display: block;
+      margin: 0 auto;
+      font-size: 48px;
+      color: #fff;
+      text-decoration: none;
+    }
   }
-  .form {
-      margin-bottom: 50px;
+
+  .slogan {
+    font-size: 24px;
+    margin-bottom: 1em;
+  }
+
+  .nav {
+    margin-bottom: 3em;
+
+    a.btn.btn-default {
+      color: @btn-default-color;
+    }
+  }
+
+  .info {
+    color: #eee;
   }
 }
 
