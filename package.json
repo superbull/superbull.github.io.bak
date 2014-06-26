@@ -1,0 +1,16 @@
+{
+  "name": "blog-of-superbull",
+  "version": "0.1.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "http://superbull.github.io"
+  },
+  "author": "Deng Zhi Cheng",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-cssmin": "~0.10.0",
+    "grunt-contrib-less": "~0.11.3",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}

@@ -1,0 +1,35 @@
+# Taken from HTML5 Boilerplate https://github.com/paulirish/html5-boilerplate
+
+# Numerous always-ignore extensions
+._*
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*.TMP
+*~
+
+# OS or Editor folders
+.DS_Store
+.cache
+.project
+.settings
+thumbs.db
+
+# Folders to ignore
+.hg
+.svn
+.idea
+
+# grunt
+node_modules
+npm-debug.log
+tmp
+dist
+
+# jekyll
+_site
