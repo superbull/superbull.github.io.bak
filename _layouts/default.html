@@ -15,28 +15,17 @@
     </head>
     <body>
 
-        <div class="site">
-          <div class="header">
+        <div class="site container">
+          <header class="header">
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">首页</a>
-          </div>
+            <p>{{ site.data.extra.slogan }}</p>
+          </header>
 
           {{ content }}
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Zhi Cheng Deng<br />
-                Full Stack Web Developer<br />
-                superbulldeng@gmail.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/superbull">github.com/superbull</a><br />
-              </p>
-            </div>
-          </div>
+          <footer class="small footer">
+            by Zhicheng
+          </footer>
         </div>
 
     </body>

@@ -2,3 +2,4 @@ name: 牛的博客
 markdown: redcarpet
 pygments: true
 encoding: utf-8
+permalink: pretty
