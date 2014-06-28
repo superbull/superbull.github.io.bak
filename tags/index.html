@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<section>
+  <h3>所有标签</h3>
+
+  {% for tag in site.tags %}
+    <h4 id="{{ tag[0] }}">
+      <i class="fa fa-tag"></i> {{ tag[0] }} ({{ tag[1].size }})
+    </h4>
+    <ul>
+      {% for post in tag[1] %}
+        <li>
+          <a class="post-title" href="{{ post.url }}">
+            <span class="date-time">{{ post.date | date_to_string }}</span> - 
+            {{ post.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</section>

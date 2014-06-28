@@ -5433,6 +5433,9 @@ body.home-page {
     width: 400px;
   }
 }
+header.header {
+  margin-bottom: 4em;
+}
 header a,
 article h2,
 a.post-title {
@@ -5504,4 +5507,8 @@ article {
 footer.footer {
   padding-bottom: 2em;
   padding-top: 2em;
+}
+footer.site-footer {
+  margin: 30px 0;
+  color: #999;
 }

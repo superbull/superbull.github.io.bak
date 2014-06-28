@@ -23,7 +23,7 @@ module.exports = function(grunt) {
           outputSourceFiles: true
         },
         files: {
-          'css/main.css': 'less/main.less'
+          'css/main.css': '_less/main.less'
         }
       }
     },
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
 
     watch: {
       less: {
-        files: 'less/**/*.less',
+        files: '_less/**/*.less',
         tasks: ['less', 'cssmin']
       }
     }
