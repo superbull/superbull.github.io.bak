@@ -5356,10 +5356,10 @@ a.list-group-item.active > .badge,
 html,
 body.home-page {
   height: 100%;
-  text-align: center;
 }
 body.home-page {
   background: url("/images/background.png") repeat-x scroll center top #2c4762;
+  text-align: center;
 }
 .fullscreen_post_bg {
   background-position: 50% 50%;
@@ -5433,29 +5433,16 @@ body.home-page {
     width: 400px;
   }
 }
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-/* Global Reset */
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
 header a,
-article h2 {
+article h2,
+a.post-title {
   color: #444444;
   margin-bottom: 0.5em;
 }
-header a:hover {
+header a:hover,
+a.post-title:hover {
   text-decoration: none;
+  color: #09b;
 }
 .date-time {
   color: #aaa;
