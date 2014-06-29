@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "探索 发现!"
+title:  "探索 发现"
 date:   2014-06-28 22:32:19
 categories: photography son
 tags: 儿子

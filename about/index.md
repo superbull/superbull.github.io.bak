@@ -1,5 +1,6 @@
 ---
 layout: default
+title:  "关于 | 牛的博客"
 ---
 
 {% highlight javascript %}
