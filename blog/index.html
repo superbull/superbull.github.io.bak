@@ -3,10 +3,10 @@ layout: default
 title:  "牛的博客"
 ---
 
-<section class="posts">
+<div class="main-inner">
 	{% for post in paginator.posts %}
     {% include post_list_item.html post=post %}
 	{% endfor %}
-</section>
+</div>
 
 {% include post_paginator.html %}

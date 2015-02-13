@@ -1,23 +1,22 @@
-<article>
-  <h2><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></h2>
+<article class="entry">
+  <div class="entry-inner">
+    <header class="entry-header">
 
-  {{ post.excerpt }}
+      <div class="date">
+        {{ post.date | date: "%F" }}
+      </div>
+      <h1 class="entry-title">
+        <a class="entry-title-link bookmark" href="{{ post.url }}">{{ post.title }}</a>  
+      </h1>
+      <div class="categories ">
+        {% for tag in post.tags %}
+          <a href="/tags/#{{ tag }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
 
-  <a class="post-title" href="{{ post.url }}">全文 >></a>
+    </header>
 
-  <footer>
-    <p class="small date-time">{{ post.date | date_to_string }}</p>
-      
-    <ul class="tags list-inline">
-      {% for tag in post.tags %}
-        <li>
-          <a href="/tags/#{{ tag }}">
-            <span class="badge">
-              <i class="fa fa-tag"></i> {{ tag }}
-            </span>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>            
-  </footer>
+    {{ post.excerpt }}
+    
+  </div>
 </article>
