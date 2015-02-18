@@ -1,7 +1,7 @@
 name: 牛的博客
-markdown: redcarpet
-pygments: true
+markdown: kramdown
+highlighter: true
 encoding: utf-8
 permalink: pretty
 paginate: 5
-paginate_path: "page:num"
+paginate_path: "page:num/"

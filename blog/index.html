@@ -4,7 +4,7 @@ title:  "牛的博客"
 ---
 
 <div class="main-inner">
-	{% for post in paginator.posts %}
+	{% for post in site.posts %}
     {% include post_list_item.html post=post %}
 	{% endfor %}
 </div>
