@@ -1,21 +1,12 @@
 ---
-layout: home
-title: "牛的博客"
+layout: default
+title:  "牛的博客"
 ---
 
-<div id="fullscreen_post_bg" class="fullscreen_post_bg" style="background-image:url('/images/suarez_crop.jpg');">
-  <img id="fullscreen_post_image" src="/images/suarez_crop.jpg" alt="Posted by shaunkardinal">
+<div class="main-inner">
+  {% for post in paginator.posts %}
+    {% include post_list_item.html post=post %}
+  {% endfor %}
 </div>
 
-<div class="home">
-  <div class="site-name text-center"><a href="/">{{ site.name }}</a></div>
-  <div class="slogan">{{ site.data.extra.slogan }}</div>
-  <div class="nav">
-    <div class="btn-group">
-      <a role="button" class="btn btn-default" href="/about" title="About">关于</a>
-      <a role="button" class="btn btn-default" href="/blog" title="Blog">博客</a>
-      <a role="button" class="btn btn-default" href="/contact" title="Contact">联系</a>
-    </div>
-  </div>
-  {% include site_footer.html %}
-</div>
+{% include post_paginator.html %}
