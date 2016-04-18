@@ -1,0 +1,16 @@
+
+1. install vagrant-vbguest
+
+  ```
+  vagrant plugin install vagrant-vbguest
+  ```
+  
+2. It turns out, upgrading the Linux kernel will cause the Virtual Box Guest Additions to stop working until they are rebuilt by running the following command in the VM.
+
+  ```
+  yum install kernel-devel-3.10.0-327.13.1.el7.x86_64
+  
+  yum groupinstall 'Development Tools'
+  
+  /opt/VBoxGuestAdditions-5.0.16/init/vboxadd setup
+  ```
