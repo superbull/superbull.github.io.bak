@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "如何在CentOS 7上安装Nginx"
+date:   2016-04-18 16:54:19
+categories: server
+tags: centos nginx
+---
+
 # 如何在CentOS 7上安装Nginx
 
 ## 我们将安装Nginx的mainline，也就是最新的版本。
