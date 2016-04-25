@@ -1,6 +1,6 @@
 name: 牛的博客
 markdown: kramdown
-highlighter: true
+highlighter: rouge
 encoding: utf-8
 permalink: pretty
 paginate: 5
